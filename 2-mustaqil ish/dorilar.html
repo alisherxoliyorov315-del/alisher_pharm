@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisher Pharm - Dorilar katalogi (12 ta)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-capsule-pill me-2"></i>Alisher Pharm
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Bosh sahifa</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="dorilar.html">Dorilar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="narxlar.html">Narxlar jadvali</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kategoriyalar</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="kategoriyalar.html">Barcha kategoriyalar (12 ta)</a></li>
+                            <li><a class="dropdown-item" href="kategoriyalar.html">Vitaminlar va Immunitet</a></li>
+                            <li><a class="dropdown-item" href="kategoriyalar.html">Og'riq qoldiruvchi va Shamollash</a></li>
+                            <li><a class="dropdown-item" href="kategoriyalar.html">Yurak, Hazm va Texnika</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="buyurtma.html">Buyurtma berish</a></li>
+                </ul>
+                <div class="btn-group">
+                    <a href="buyurtma.html" class="btn btn-light text-success fw-semibold"><i class="bi bi-cart-check me-1"></i> Buyurtma</a>
+                    <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split text-success" data-bs-toggle="dropdown"></button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="narxlar.html">Narxlarni solishtirish</a></li>
+                        <li><a class="dropdown-item" href="kategoriyalar.html">Bo'limlar bo'yicha</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-2">
+            <div>
+                <h2 class="fw-bold text-success mb-0"><i class="bi bi-bag-plus-fill me-2"></i>Barcha dorilar katalogi (12 xil)</h2>
+                <small class="text-muted">Istalgan dorining "Buyurtma berish" tugmasini bossangiz, o'sha dori avtomatik tanlanadi</small>
+            </div>
+            <button type="button" class="btn btn-danger" 
+                    data-bs-toggle="popover" 
+                    data-bs-placement="left" 
+                    data-bs-title="Shifokor maslahati shart!" 
+                    data-bs-content="Antibiotiklar va kuchli ta'sir qiluvchi dorilarni o'zboshimchalik bilan ichish sog'liq uchun xavfli.">
+                <i class="bi bi-exclamation-triangle-fill me-1"></i> Muhim eslatma
+            </button>
+        </div>
+
+        <!-- 12 ta Dori kartochkasi -->
+        <div class="row g-4">
+            
+            <!-- 1-dori -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-success text-white d-flex justify-content-between">
+                        <span>1. Vitaminlar</span>
+                        <span class="badge bg-light text-success">Mavjud</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&h=350&q=80" class="card-img-top img-fluid" alt="Vitamin D3">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Vitamin D3 (5000 IU)</h5>
+                        <p class="card-text text-muted small">Immunitet va suyaklar mustahkamligi uchun kunlik kapsulalar (60 dona).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-success">85 000 so'm</span>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="+25°C gacha quruq joyda saqlang">
+                                <i class="bi bi-info-circle"></i> Saqlash
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-grid">
+                        <a href="buyurtma.html?dori=1" class="btn btn-success"><i class="bi bi-cart-plus me-1"></i> Buyurtma berish</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2-dori -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-primary text-white d-flex justify-content-between">
+                        <span>2. Og'riq qoldiruvchi</span>
+                        <span class="badge bg-light text-primary">Retseptsiz</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=600&h=350&q=80" class="card-img-top img-fluid" alt="Ibuprofen 400 mg">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Ibuprofen 400 mg</h5>
+                        <p class="card-text text-muted small">Bosh, tish og'riqlari va isitmani tez tushiruvchi samarali tabletka (№20).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-primary">24 000 so'm</span>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="Ovqatdan keyin suv bilan ichiladi">
+                                <i class="bi bi-info-circle"></i> Qo'llash
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-grid">
+                        <a href="buyurtma.html?dori=2" class="btn btn-primary"><i class="bi bi-cart-plus me-1"></i> Buyurtma berish</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3-dori -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-warning text-dark d-flex justify-content-between">
+                        <span>3. Yurak va miya</span>
+                        <span class="badge bg-dark text-warning">Top mahsulot</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=600&h=350&q=80" class="card-img-top img-fluid" alt="Omega-3 Baliq yog'i">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Omega-3 Baliq yog'i</h5>
+                        <p class="card-text text-muted small">Yurak-qon tomir tizimi va xotirani yaxshilash uchun tabiiy EPA/DHA (№90).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-dark">115 000 so'm</span>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="Kuniga 1-2 kapsuladan ichiladi">
+                                <i class="bi bi-info-circle"></i> Qo'llash
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-grid">
+                        <a href="buyurtma.html?dori=3" class="btn btn-warning fw-semibold"><i class="bi bi-cart-plus me-1"></i> Buyurtma berish</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4-dori -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-danger text-white d-flex justify-content-between">
+                        <span>4. Antibiotik</span>
+                        <span class="badge bg-light text-danger">Retsept bilan</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=600&h=350&q=80" class="card-img-top img-fluid" alt="Amoksitsillin">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Amoksitsillin 500 mg</h5>
+                        <p class="card-text text-muted small">Nafas yo'llari va bakterial infeksiyalarga qarshi keng ta'sirli kapsula (№20).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-danger">48 000 so'm</span>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="Faqat shifokor retsepti bilan beriladi">
+                                <i class="bi bi-info-circle"></i> Tartib
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-grid">
+                        <a href="buyurtma.html?dori=4" class="btn btn-danger"><i class="bi bi-cart-plus me-1"></i> Buyurtma berish</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5-dori -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-info text-dark d-flex justify-content-between">
+                        <span>5. Shamollashga qarshi</span>
+                        <span class="badge bg-dark text-white">Mavjud</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=600&h=350&q=80" class="card-img-top img-fluid" alt="Paratsetamol">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Paratsetamol 500 mg</h5>
+                        <p class="card-text text-muted small">Gripp va shamollashda tana haroratini tushiruvchi klassik vosita (№10).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-info-emphasis">6 000 so'm</span>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="Sutkalik doza 4 tabletkadan oshmasin">
+                                <i class="bi bi-info-circle"></i> Doza
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-grid">
+                        <a href="buyurtma.html?dori=5" class="btn btn-info"><i class="bi bi-cart-plus me-1"></i> Buyurtma berish</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6-dori -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-success text-white d-flex justify-content-between">
+                        <span>6. Asab tizimi</span>
+                        <span class="badge bg-light text-success">Mavjud</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1628771065518-0d82f1938462?auto=format&fit=crop&w=600&h=350&q=80" class="card-img-top img-fluid" alt="Magne B6">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Magne B6 Forte</h5>
+                        <p class="card-text text-muted small">Charchoq, stress va uyqusizlikni bartaraf etuvchi magniy kompleksi (№40).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-success">92 000 so'm</span>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="Fransiyada ishlab chiqarilgan">
+                                <i class="bi bi-info-circle"></i> Ishlab chiqaruvchi
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-grid">
+                        <a href="buyurtma.html?dori=6" class="btn btn-success"><i class="bi bi-cart-plus me-1"></i> Buyurtma berish</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7-dori: Elektron Termometr -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-secondary text-white d-flex justify-content-between">
+                        <span>7. Tibbiy texnika</span>
+                        <span class="badge bg-light text-dark">Kafolat 2 yil</span>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Clinical_thermometer_38.7.JPG/640px-Clinical_thermometer_38.7.JPG" onerror="this.src='https://placehold.co/600x350/6c757d/ffffff?text=Elektron+Termometr+36.6'" class="card-img-top img-fluid" style="height: 220px; object-fit: cover;" alt="Elektron Termometr">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Elektron Termometr</h5>
+                        <p class="card-text text-muted small">Simobsiz, xavfsiz va 10 soniyada aniq haroratni o'lchovchi termometr.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-secondary">65 000 so'm</span>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="Batareykasi to'plam ichida mavjud">
+                                <i class="bi bi-info-circle"></i> Komplekt
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-grid">
+                        <a href="buyurtma.html?dori=7" class="btn btn-secondary"><i class="bi bi-cart-plus me-1"></i> Buyurtma berish</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8-dori -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-primary text-white d-flex justify-content-between">
+                        <span>8. Vitaminlar</span>
+                        <span class="badge bg-light text-primary">Aksiya</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&h=350&q=80" class="card-img-top img-fluid" alt="Vitamin C">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Vitamin C 1000 mg (Eruvchan)</h5>
+                        <p class="card-text text-muted small">Suvda eruvchan apelsin ta'mli immunitet ko'taruvchi tabletkalar (№20).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-primary">38 000 so'm</span>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="1 stakan iliq suvda eritib ichiladi">
+                                <i class="bi bi-info-circle"></i> Tayyorlash
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-grid">
+                        <a href="buyurtma.html?dori=8" class="btn btn-primary"><i class="bi bi-cart-plus me-1"></i> Buyurtma berish</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9-dori -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-dark text-white d-flex justify-content-between">
+                        <span>9. Birinchi yordam</span>
+                        <span class="badge bg-success">Mavjud</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=600&h=350&q=80" class="card-img-top img-fluid" alt="Antiseptik">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Antiseptik Spirtli Gel 250ml</h5>
+                        <p class="card-text text-muted small">Qo'l va yuzalarni 99.9% bakteriya va viruslardan tozalovchi vosita.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-dark">18 000 so'm</span>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="Olovdan uzoqroqda saqlang">
+                                <i class="bi bi-info-circle"></i> Ehtiyotkorlik
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-grid">
+                        <a href="buyurtma.html?dori=9" class="btn btn-dark"><i class="bi bi-cart-plus me-1"></i> Buyurtma berish</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10-dori -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-warning text-dark d-flex justify-content-between">
+                        <span>10. Spazmolitik</span>
+                        <span class="badge bg-danger text-white">Kam qoldi</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=600&h=350&q=80" class="card-img-top img-fluid" alt="Noshpa 40 mg">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Noshpa 40 mg</h5>
+                        <p class="card-text text-muted small">Ichki a'zolar va qorin sohasidagi spazm va og'riqlarni tez bartaraf etadi (№24).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-dark">32 000 so'm</span>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="Vengriyada ishlab chiqarilgan">
+                                <i class="bi bi-info-circle"></i> Ishlab chiqaruvchi
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-grid">
+                        <a href="buyurtma.html?dori=10" class="btn btn-warning fw-semibold"><i class="bi bi-cart-plus me-1"></i> Buyurtma berish</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11-dori -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-success text-white d-flex justify-content-between">
+                        <span>11. Hazm qilish</span>
+                        <span class="badge bg-light text-success">Mavjud</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=600&h=350&q=80" class="card-img-top img-fluid" alt="Mezim Forte">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Mezim Forte</h5>
+                        <p class="card-text text-muted small">Oshqozon-ichak hazm qilish jarayonini yengillashtiruvchi ferment tabletkalar (№20).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-success">29 000 so'm</span>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="Ovqatlanish vaqtida ichiladi">
+                                <i class="bi bi-info-circle"></i> Qo'llash
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-grid">
+                        <a href="buyurtma.html?dori=11" class="btn btn-success"><i class="bi bi-cart-plus me-1"></i> Buyurtma berish</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12-dori -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-danger text-white d-flex justify-content-between">
+                        <span>12. Yurak-qon tomir</span>
+                        <span class="badge bg-light text-danger">Mavjud</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=600&h=350&q=80" class="card-img-top img-fluid" alt="KardioMagnil">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">KardioMagnil 75 mg</h5>
+                        <p class="card-text text-muted small">Tromblar hosil bo'lishining oldini oluvchi va yurakni himoya qiluvchi vosita (№100).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-danger">54 000 so'm</span>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" title="Kuniga 1 tabletkadan kechqurun ichiladi">
+                                <i class="bi bi-info-circle"></i> Doza
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-grid">
+                        <a href="buyurtma.html?dori=12" class="btn btn-danger"><i class="bi bi-cart-plus me-1"></i> Buyurtma berish</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0"><i class="bi bi-capsule text-success me-1"></i> <strong>Alisher Pharm</strong> — Dorilar katalogi (12 ta mahsulot) | 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        [...document.querySelectorAll('[data-bs-toggle="tooltip"]')].map(el => new bootstrap.Tooltip(el));
+        [...document.querySelectorAll('[data-bs-toggle="popover"]')].map(el => new bootstrap.Popover(el));
+    </script>
+</body>
+</html>

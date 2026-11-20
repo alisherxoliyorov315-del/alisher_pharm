@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShifoMed Apteka - Narxlar jadvali</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-capsule-pill me-2"></i>ShifoMed Apteka</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Bosh sahifa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dorilar.html">Dorilar</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="narxlar.html">Narxlar jadvali</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kategoriyalar</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="kategoriyalar.html#vitamin">Vitaminlar va BAA</a></li>
+                            <li><a class="dropdown-item" href="kategoriyalar.html#ogriq">Og'riq qoldiruvchilar</a></li>
+                            <li><a class="dropdown-item" href="kategoriyalar.html#yurak">Yurak-qon tomir</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="buyurtma.html">Buyurtma berish</a></li>
+                </ul>
+                <div class="btn-group">
+                    <a href="buyurtma.html" class="btn btn-light text-success fw-semibold">Buyurtma berish</a>
+                    <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split text-success" data-bs-toggle="dropdown"></button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="dorilar.html">Rasmli katalog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="fw-bold text-success mb-4"><i class="bi bi-table me-2"></i>Dorilar va tibbiy vositalar narxnomasi</h2>
+        
+        <div class="card shadow-sm">
+            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                <span>Yangilangan narxlar jadvali (Noyabr 2026)</span>
+                <span class="badge bg-success">12 turdagi mahsulot</span>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-bordered align-middle mb-0">
+                        <thead class="table-success">
+                            <tr>
+                                <th>№</th>
+                                <th>Dori nomi</th>
+                                <th>Kategoriya</th>
+                                <th>Ishlab chiqaruvchi</th>
+                                <th>Chiqarilish shakli</th>
+                                <th>Narxi</th>
+                                <th>Holati</th>
+                                <th>Amal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="fw-bold">Vitamin D3 (5000 IU)</td>
+                                <td>Vitaminlar</td>
+                                <td>AQSH</td>
+                                <td>Kapsula №60</td>
+                                <td class="fw-semibold text-success">85 000 so'm</td>
+                                <td><span class="badge bg-success">Mavjud</span></td>
+                                <td><a href="buyurtma.html" class="btn btn-sm btn-outline-success">Tanlash</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="fw-bold">Ibuprofen 400 mg</td>
+                                <td>Og'riq qoldiruvchi</td>
+                                <td>Germaniya</td>
+                                <td>Tabletka №20</td>
+                                <td class="fw-semibold text-success">24 000 so'm</td>
+                                <td><span class="badge bg-success">Mavjud</span></td>
+                                <td><a href="buyurtma.html" class="btn btn-sm btn-outline-success">Tanlash</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="fw-bold">Omega-3 Baliq yog'i</td>
+                                <td>Yurak-qon tomir</td>
+                                <td>Norvegiya</td>
+                                <td>Kapsula №90</td>
+                                <td class="fw-semibold text-success">115 000 so'm</td>
+                                <td><span class="badge bg-success">Mavjud</span></td>
+                                <td><a href="buyurtma.html" class="btn btn-sm btn-outline-success">Tanlash</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td class="fw-bold">Amoksitsillin 500 mg</td>
+                                <td>Antibiotik</td>
+                                <td>Avstriya</td>
+                                <td>Kapsula №20</td>
+                                <td class="fw-semibold text-success">48 000 so'm</td>
+                                <td><span class="badge bg-warning text-dark">Retsept bilan</span></td>
+                                <td><a href="buyurtma.html" class="btn btn-sm btn-outline-success">Tanlash</a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="fw-bold">Paratsetamol 500 mg</td>
+                                <td>Shamollashga qarshi</td>
+                                <td>O'zbekiston</td>
+                                <td>Tabletka №10</td>
+                                <td class="fw-semibold text-success">6 000 so'm</td>
+                                <td><span class="badge bg-success">Mavjud</span></td>
+                                <td><a href="buyurtma.html" class="btn btn-sm btn-outline-success">Tanlash</a></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td class="fw-bold">Magne B6 Forte</td>
+                                <td>Asab tizimi</td>
+                                <td>Fransiya</td>
+                                <td>Tabletka №40</td>
+                                <td class="fw-semibold text-success">92 000 so'm</td>
+                                <td><span class="badge bg-success">Mavjud</span></td>
+                                <td><a href="buyurtma.html" class="btn btn-sm btn-outline-success">Tanlash</a></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td class="fw-bold">Elektron Termometr</td>
+                                <td>Tibbiy texnika</td>
+                                <td>Yaponiya</td>
+                                <td>1 dona</td>
+                                <td class="fw-semibold text-success">65 000 so'm</td>
+                                <td><span class="badge bg-success">Mavjud</span></td>
+                                <td><a href="buyurtma.html" class="btn btn-sm btn-outline-success">Tanlash</a></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td class="fw-bold">Vitamin C 1000 mg</td>
+                                <td>Vitaminlar</td>
+                                <td>Shveytsariya</td>
+                                <td>Eruvchan №20</td>
+                                <td class="fw-semibold text-success">38 000 so'm</td>
+                                <td><span class="badge bg-success">Mavjud</span></td>
+                                <td><a href="buyurtma.html" class="btn btn-sm btn-outline-success">Tanlash</a></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td class="fw-bold">Antiseptik Gel 250ml</td>
+                                <td>Birinchi yordam</td>
+                                <td>O'zbekiston</td>
+                                <td>Flakon</td>
+                                <td class="fw-semibold text-success">18 000 so'm</td>
+                                <td><span class="badge bg-success">Mavjud</span></td>
+                                <td><a href="buyurtma.html" class="btn btn-sm btn-outline-success">Tanlash</a></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td class="fw-bold">Noshpa 40 mg</td>
+                                <td>Spazmolitik</td>
+                                <td>Vengriya</td>
+                                <td>Tabletka №24</td>
+                                <td class="fw-semibold text-success">32 000 so'm</td>
+                                <td><span class="badge bg-danger">Kam qoldi</span></td>
+                                <td><a href="buyurtma.html" class="btn btn-sm btn-outline-success">Tanlash</a></td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td class="fw-bold">Mezim Forte</td>
+                                <td>Hazm qilish</td>
+                                <td>Germaniya</td>
+                                <td>Tabletka №20</td>
+                                <td class="fw-semibold text-success">29 000 so'm</td>
+                                <td><span class="badge bg-success">Mavjud</span></td>
+                                <td><a href="buyurtma.html" class="btn btn-sm btn-outline-success">Tanlash</a></td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td class="fw-bold">KardioMagnil 75 mg</td>
+                                <td>Yurak-qon tomir</td>
+                                <td>Daniya</td>
+                                <td>Tabletka №100</td>
+                                <td class="fw-semibold text-success">54 000 so'm</td>
+                                <td><span class="badge bg-success">Mavjud</span></td>
+                                <td><a href="buyurtma.html" class="btn btn-sm btn-outline-success">Tanlash</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0"><i class="bi bi-capsule text-success me-1"></i> <strong>ShifoMed Apteka</strong> — Narxlar jadvali | 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

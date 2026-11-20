@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShifoMed Apteka - Kategoriyalar (12 ta dori)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-capsule-pill me-2"></i>ShifoMed Apteka</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Bosh sahifa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dorilar.html">Dorilar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="narxlar.html">Narxlar jadvali</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active fw-bold" href="#" role="button" data-bs-toggle="dropdown">Kategoriyalar</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="kategoriyalar.html">Barcha kategoriyalar (12 ta)</a></li>
+                            <li><a class="dropdown-item" href="kategoriyalar.html">Vitaminlar va Immunitet</a></li>
+                            <li><a class="dropdown-item" href="kategoriyalar.html">Og'riq qoldiruvchi va Shamollash</a></li>
+                            <li><a class="dropdown-item" href="kategoriyalar.html">Yurak, Hazm va Birinchi yordam</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="buyurtma.html">Buyurtma berish</a></li>
+                </ul>
+                <div class="btn-group">
+                    <a href="dorilar.html" class="btn btn-light text-success fw-semibold">Barcha dorilar (12)</a>
+                    <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split text-success" data-bs-toggle="dropdown"></button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="buyurtma.html">Buyurtma berish</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="fw-bold text-success mb-4"><i class="bi bi-grid-fill me-2"></i>Dori kategoriyalari bo'yicha saralash (Jami 12 ta)</h2>
+
+        <!-- Konteynerli Tab menyu (Nav-Pills) -->
+        <ul class="nav nav-pills mb-4 bg-white p-2 rounded shadow-sm gap-2" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active fw-semibold" data-bs-toggle="pill" data-bs-target="#tab-barchasi" type="button">
+                    <i class="bi bi-collection me-1"></i> Barcha dorilar (12)
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-semibold" data-bs-toggle="pill" data-bs-target="#tab-vitamin" type="button">
+                    <i class="bi bi-shield-plus me-1"></i> Vitaminlar va Immunitet (4)
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-semibold" data-bs-toggle="pill" data-bs-target="#tab-ogriq" type="button">
+                    <i class="bi bi-bandaid me-1"></i> Og'riq qoldiruvchi va Shamollash (4)
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-semibold" data-bs-toggle="pill" data-bs-target="#tab-yurak" type="button">
+                    <i class="bi bi-heart-pulse me-1"></i> Yurak, Hazm va Texnika (4)
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+            
+            <!-- 0-Tab: BARCHA 12 TA DORI -->
+            <div class="tab-pane fade show active" id="tab-barchasi">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center h-100">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Vitamin D3"></div>
+                                <div class="col-8"><div class="card-body"><h6 class="fw-bold">1. Vitamin D3 (5000 IU)</h6><p class="small text-muted mb-1">Vitaminlar</p><p class="fw-bold text-success mb-2">85 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-success">Tanlash</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center h-100">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Ibuprofen"></div>
+                                <div class="col-8"><div class="card-body"><h6 class="fw-bold">2. Ibuprofen 400 mg</h6><p class="small text-muted mb-1">Og'riq qoldiruvchi</p><p class="fw-bold text-primary mb-2">24 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-primary">Tanlash</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center h-100">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Omega-3"></div>
+                                <div class="col-8"><div class="card-body"><h6 class="fw-bold">3. Omega-3 Baliq yog'i</h6><p class="small text-muted mb-1">Yurak va miya</p><p class="fw-bold text-warning-emphasis mb-2">115 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-warning">Tanlash</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center h-100">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Amoksitsillin"></div>
+                                <div class="col-8"><div class="card-body"><h6 class="fw-bold">4. Amoksitsillin 500 mg</h6><p class="small text-muted mb-1">Antibiotik</p><p class="fw-bold text-danger mb-2">48 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-danger">Tanlash</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center h-100">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Paratsetamol"></div>
+                                <div class="col-8"><div class="card-body"><h6 class="fw-bold">5. Paratsetamol 500 mg</h6><p class="small text-muted mb-1">Shamollashga qarshi</p><p class="fw-bold text-info-emphasis mb-2">6 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-info">Tanlash</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center h-100">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1628771065518-0d82f1938462?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Magne B6"></div>
+                                <div class="col-8"><div class="card-body"><h6 class="fw-bold">6. Magne B6 Forte</h6><p class="small text-muted mb-1">Asab tizimi</p><p class="fw-bold text-success mb-2">92 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-success">Tanlash</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center h-100">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Termometr"></div>
+                                <div class="col-8"><div class="card-body"><h6 class="fw-bold">7. Elektron Termometr</h6><p class="small text-muted mb-1">Tibbiy texnika</p><p class="fw-bold text-secondary mb-2">65 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-secondary">Tanlash</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center h-100">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Vitamin C"></div>
+                                <div class="col-8"><div class="card-body"><h6 class="fw-bold">8. Vitamin C 1000 mg</h6><p class="small text-muted mb-1">Vitaminlar</p><p class="fw-bold text-primary mb-2">38 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-primary">Tanlash</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center h-100">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Antiseptik"></div>
+                                <div class="col-8"><div class="card-body"><h6 class="fw-bold">9. Antiseptik Gel 250ml</h6><p class="small text-muted mb-1">Birinchi yordam</p><p class="fw-bold text-dark mb-2">18 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-dark">Tanlash</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center h-100">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Noshpa"></div>
+                                <div class="col-8"><div class="card-body"><h6 class="fw-bold">10. Noshpa 40 mg</h6><p class="small text-muted mb-1">Spazmolitik</p><p class="fw-bold text-warning-emphasis mb-2">32 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-warning">Tanlash</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center h-100">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Mezim"></div>
+                                <div class="col-8"><div class="card-body"><h6 class="fw-bold">11. Mezim Forte</h6><p class="small text-muted mb-1">Hazm qilish</p><p class="fw-bold text-success mb-2">29 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-success">Tanlash</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center h-100">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="KardioMagnil"></div>
+                                <div class="col-8"><div class="card-body"><h6 class="fw-bold">12. KardioMagnil 75 mg</h6><p class="small text-muted mb-1">Yurak-qon tomir</p><p class="fw-bold text-danger mb-2">54 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-danger">Tanlash</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1-Tab: Vitaminlar va Immunitet (4 ta) -->
+            <div class="tab-pane fade" id="tab-vitamin">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Vitamin D3"></div>
+                                <div class="col-8"><div class="card-body"><h5 class="fw-bold">Vitamin D3 (5000 IU)</h5><p class="small text-muted">Suyaklar va immunitet uchun eng zarur vitamin.</p><p class="fw-bold text-success mb-2">85 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-success">Buyurtma berish</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Vitamin C"></div>
+                                <div class="col-8"><div class="card-body"><h5 class="fw-bold">Vitamin C 1000 mg</h5><p class="small text-muted">Viruslardan himoya qiluvchi eruvchan tabletka.</p><p class="fw-bold text-success mb-2">38 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-success">Buyurtma berish</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1628771065518-0d82f1938462?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Magne B6"></div>
+                                <div class="col-8"><div class="card-body"><h5 class="fw-bold">Magne B6 Forte</h5><p class="small text-muted">Asab tizimi va energiya balansini tiklovchi kompleks.</p><p class="fw-bold text-success mb-2">92 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-success">Buyurtma berish</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Antiseptik"></div>
+                                <div class="col-8"><div class="card-body"><h5 class="fw-bold">Antiseptik Gel 250ml</h5><p class="small text-muted">Kundalik gigiyena va infeksiyalardan himoya.</p><p class="fw-bold text-success mb-2">18 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-success">Buyurtma berish</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2-Tab: Og'riq qoldiruvchi va Shamollash (4 ta) -->
+            <div class="tab-pane fade" id="tab-ogriq">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Ibuprofen"></div>
+                                <div class="col-8"><div class="card-body"><h5 class="fw-bold">Ibuprofen 400 mg</h5><p class="small text-muted">Tezkor og'riq qoldiruvchi va isitma tushiruvchi.</p><p class="fw-bold text-primary mb-2">24 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-primary">Buyurtma berish</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Paratsetamol"></div>
+                                <div class="col-8"><div class="card-body"><h5 class="fw-bold">Paratsetamol 500 mg</h5><p class="small text-muted">Shamollash va yuqori haroratga qarshi vosita.</p><p class="fw-bold text-primary mb-2">6 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-primary">Buyurtma berish</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Amoksitsillin"></div>
+                                <div class="col-8"><div class="card-body"><h5 class="fw-bold">Amoksitsillin 500 mg</h5><p class="small text-muted">Bakterial infeksiyalarga qarshi antibiotik.</p><p class="fw-bold text-primary mb-2">48 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-primary">Buyurtma berish</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Noshpa"></div>
+                                <div class="col-8"><div class="card-body"><h5 class="fw-bold">Noshpa 40 mg</h5><p class="small text-muted">Spazm va ichki og'riqlarni qoldiruvchi vosita.</p><p class="fw-bold text-primary mb-2">32 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-primary">Buyurtma berish</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3-Tab: Yurak, Hazm va Texnika (4 ta) -->
+            <div class="tab-pane fade" id="tab-yurak">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Omega 3"></div>
+                                <div class="col-8"><div class="card-body"><h5 class="fw-bold">Omega-3 Baliq yog'i</h5><p class="small text-muted">Qon tomirlarini tozalovchi va yurakni quvvatlovchi.</p><p class="fw-bold text-danger mb-2">115 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-danger">Buyurtma berish</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="KardioMagnil"></div>
+                                <div class="col-8"><div class="card-body"><h5 class="fw-bold">KardioMagnil 75 mg</h5><p class="small text-muted">Yurak-qon tomir kasalliklarining oldini olish uchun.</p><p class="fw-bold text-danger mb-2">54 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-danger">Buyurtma berish</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Mezim Forte"></div>
+                                <div class="col-8"><div class="card-body"><h5 class="fw-bold">Mezim Forte</h5><p class="small text-muted">Hazm qilish tizimini yaxshilovchi ferment.</p><p class="fw-bold text-danger mb-2">29 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-danger">Buyurtma berish</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4"><img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&h=400&q=80" class="img-fluid rounded-start" alt="Termometr"></div>
+                                <div class="col-8"><div class="card-body"><h5 class="fw-bold">Elektron Termometr</h5><p class="small text-muted">Tana haroratini tezkor o'lchovchi tibbiy asbob.</p><p class="fw-bold text-danger mb-2">65 000 so'm</p><a href="buyurtma.html" class="btn btn-sm btn-danger">Buyurtma berish</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0"><i class="bi bi-capsule text-success me-1"></i> <strong>ShifoMed Apteka</strong> — Kategoriyalar (12 ta mahsulot) | 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

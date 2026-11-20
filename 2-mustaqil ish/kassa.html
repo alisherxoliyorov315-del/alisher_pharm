@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisher Pharm - Kassa va Savdo hisoboti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-capsule-pill me-2"></i>Alisher Pharm
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Bosh sahifa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dorilar.html">Dorilar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="narxlar.html">Narxlar jadvali</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kategoriyalar</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="kategoriyalar.html">Barcha kategoriyalar (12 ta)</a></li>
+                            <li><a class="dropdown-item" href="kategoriyalar.html">Vitaminlar va Immunitet</a></li>
+                            <li><a class="dropdown-item" href="kategoriyalar.html">Og'riq qoldiruvchi va Shamollash</a></li>
+                            <li><a class="dropdown-item" href="kategoriyalar.html">Yurak, Hazm va Texnika</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="buyurtma.html">Buyurtma berish</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="kassa.html">Kassa</a></li>
+                </ul>
+                <div class="btn-group">
+                    <a href="buyurtma.html" class="btn btn-light text-success fw-semibold">
+                        <i class="bi bi-plus-circle me-1"></i> Yangi savdo
+                    </a>
+                    <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split text-success" data-bs-toggle="dropdown"></button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="dorilar.html">Dorilar katalogi</a></li>
+                        <li><a class="dropdown-item" href="narxlar.html">Narxlar jadvali</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-2">
+            <div>
+                <h2 class="fw-bold text-success mb-1"><i class="bi bi-cash-coin me-2"></i>Kassa va Real vaqt savdo nazorati</h2>
+                <small class="text-muted">Buyurtma bo'limida tasdiqlangan barcha savdolar avtomatik ravishda ushbu kassaga yoziladi</small>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-success-subtle text-success border border-success px-3 py-2">
+                    <i class="bi bi-broadcast me-1"></i> Jonli rejim: Faol
+                </span>
+                <button class="btn btn-outline-danger btn-sm" onclick="clearCashbox()">
+                    <i class="bi bi-trash me-1"></i> Kassani tozalash
+                </button>
+            </div>
+        </div>
+
+        <!-- 3 TA ASOSIY KARTA: KUNLIK, HAFTALIK, OYLIK SAVDO -->
+        <div class="row g-4 mb-5">
+            <!-- 1 Kunlik savdo -->
+            <div class="col-12 col-md-4">
+                <div class="card border-0 shadow-sm h-100 border-start border-5 border-success">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-uppercase fw-bold text-success small">1 Kunlik savdo (Bugun)</span>
+                            <span class="bg-success-subtle text-success rounded-circle p-2">
+                                <i class="bi bi-calendar-day fs-5"></i>
+                            </span>
+                        </div>
+                        <h3 class="fw-bold text-dark mb-1" id="dailySum">0 so'm</h3>
+                        <small class="text-muted" id="dailyCount">0 ta savdo amalga oshirildi</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1 Haftalik savdo -->
+            <div class="col-12 col-md-4">
+                <div class="card border-0 shadow-sm h-100 border-start border-5 border-primary">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-uppercase fw-bold text-primary small">1 Haftalik savdo (7 kun)</span>
+                            <span class="bg-primary-subtle text-primary rounded-circle p-2">
+                                <i class="bi bi-calendar-week fs-5"></i>
+                            </span>
+                        </div>
+                        <h3 class="fw-bold text-dark mb-1" id="weeklySum">0 so'm</h3>
+                        <small class="text-muted" id="weeklyCount">0 ta savdo amalga oshirildi</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1 Oylik savdo -->
+            <div class="col-12 col-md-4">
+                <div class="card border-0 shadow-sm h-100 border-start border-5 border-warning">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-uppercase fw-bold text-warning-emphasis small">1 Oylik savdo (30 kun)</span>
+                            <span class="bg-warning-subtle text-warning-emphasis rounded-circle p-2">
+                                <i class="bi bi-calendar-month fs-5"></i>
+                            </span>
+                        </div>
+                        <h3 class="fw-bold text-dark mb-1" id="monthlySum">0 so'm</h3>
+                        <small class="text-muted" id="monthlyCount">0 ta savdo amalga oshirildi</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KASSAGA KELIB TUSHGAN SAVDOLAR JADVALI -->
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center py-3">
+                <span class="fw-bold"><i class="bi bi-receipt-cutoff me-2"></i>Kassa cheklari va savdolar tarixi</span>
+                <span class="badge bg-success" id="totalReceiptsBadge">Jami: 0 ta chek</span>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover align-middle mb-0">
+                        <thead class="table-success">
+                            <tr>
+                                <th>Chek №</th>
+                                <th>Sana va Vaqt</th>
+                                <th>Mijoz</th>
+                                <th>Sotilgan dori</th>
+                                <th>Soni</th>
+                                <th>Summa</th>
+                                <th>Holati</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cashboxTableBody">
+                            <tr>
+                                <td colspan="7" class="text-center text-muted py-4">
+                                    Hozircha kassada savdo qayd etilmagan. Buyurtma bo'limidan savdo qiling.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0"><i class="bi bi-capsule text-success me-1"></i> <strong>Alisher Pharm</strong> — Kassa bo'limi | 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function formatMoney(num) {
+            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " so'm";
+        }
+
+        function updateCashbox() {
+            // Buyurtma bo'limidan tasdiqlangan savdolarni o'qish
+            const allSales = JSON.parse(localStorage.getItem('alisher_pharm_kassa')) || [];
+            
+            const now = Date.now();
+            const oneDayMs = 24 * 60 * 60 * 1000;
+            const sevenDaysMs = 7 * oneDayMs;
+            const thirtyDaysMs = 30 * oneDayMs;
+
+            const todayStr = new Date().toLocaleDateString('uz-UZ');
+
+            let dailyTotal = 0, dailyQty = 0;
+            let weeklyTotal = 0, weeklyQty = 0;
+            let monthlyTotal = 0, monthlyQty = 0;
+
+            allSales.forEach(sale => {
+                const saleTotal = sale.price * sale.qty;
+                const diff = now - sale.timestamp;
+
+                // 1 kunlik (bugungi sana bo'yicha)
+                if (sale.dateStr === todayStr) {
+                    dailyTotal += saleTotal;
+                    dailyQty++;
+                }
+                // 1 haftalik (so'nggi 7 kun)
+                if (diff <= sevenDaysMs) {
+                    weeklyTotal += saleTotal;
+                    weeklyQty++;
+                }
+                // 1 oylik (so'nggi 30 kun)
+                if (diff <= thirtyDaysMs) {
+                    monthlyTotal += saleTotal;
+                    monthlyQty++;
+                }
+            });
+
+            document.getElementById('dailySum').textContent = formatMoney(dailyTotal);
+            document.getElementById('dailyCount').textContent = `${dailyQty} ta savdo amalga oshirildi`;
+
+            document.getElementById('weeklySum').textContent = formatMoney(weeklyTotal);
+            document.getElementById('weeklyCount').textContent = `${weeklyQty} ta savdo amalga oshirildi`;
+
+            document.getElementById('monthlySum').textContent = formatMoney(monthlyTotal);
+            document.getElementById('monthlyCount').textContent = `${monthlyQty} ta savdo amalga oshirildi`;
+
+            document.getElementById('totalReceiptsBadge').textContent = `Jami: ${allSales.length} ta chek`;
+
+            const tbody = document.getElementById('cashboxTableBody');
+            if (allSales.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="7" class="text-center text-muted py-4">
+                            <i class="bi bi-inbox fs-3 d-block mb-1"></i>
+                            Hozircha kassada savdo qayd etilmagan. Buyurtma berish bo'limidan savdo qiling.
+                        </td>
+                    </tr>`;
+                return;
+            }
+
+            tbody.innerHTML = '';
+            // Eng oxirgi savdolarni tepada ko'rsatish
+            [...allSales].reverse().forEach((sale, idx) => {
+                const rowNum = allSales.length - idx;
+                const total = sale.price * sale.qty;
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td class="fw-bold">#${1000 + rowNum}</td>
+                    <td><small class="text-muted">${sale.dateStr} | ${sale.timeStr}</small></td>
+                    <td>${sale.name} <small class="text-muted d-block">+998${sale.phone}</small></td>
+                    <td class="fw-semibold text-dark">${sale.medName}</td>
+                    <td><span class="badge bg-secondary">${sale.qty} dona</span></td>
+                    <td class="fw-bold text-success">${formatMoney(total)}</td>
+                    <td><span class="badge bg-success"><i class="bi bi-check-circle me-1"></i>To'langan</span></td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function clearCashbox() {
+            if (confirm("Kassadagi barcha savdo tarixini tozalamoqchimisiz?")) {
+                localStorage.removeItem('alisher_pharm_kassa');
+                updateCashbox();
+            }
+        }
+
+        // Boshqa tabda (buyurtma.html da) savdo bo'lganda real vaqtda avtomatik yangilanish
+        window.addEventListener('storage', function(e) {
+            if (e.key === 'alisher_pharm_kassa') {
+                updateCashbox();
+            }
+        });
+
+        // Har 2 soniyada jonli tekshirish
+        setInterval(updateCashbox, 2000);
+        updateCashbox();
+    </script>
+</body>
+</html>
